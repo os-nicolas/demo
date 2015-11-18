@@ -1,0 +1,76 @@
+ul {
+    padding-left:20px;
+}
+
+/**{
+    color: #86959e;
+}*/
+
+ul {
+    list-style: circle;
+    color: #a5b0b7;
+}
+li {
+    margin-left: 20px;
+}
+
+input{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    /*background: linear-gradient(to bottom, white, white, #f2f2f2);*/
+    /*background: #f2f2f2;*/
+    background: -webkit-linear-gradient(to bottom left, white, #f2f2f2, #f2f2f2); 
+    background: linear-gradient(to bottom left, white, #f2f2f2, #f2f2f2); 
+    border-radius: 50px;
+    padding: 2px 10px;
+}
+
+input:hover, input:focus{
+    background: -webkit-linear-gradient(bottom left, white, white, #f2f2f2); 
+    background: linear-gradient(to bottom left, white, white, #f2f2f2); 
+    border-color: #c6cdd1;
+    color: black;
+}
+
+input[type=checkbox]+span{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 1px, 2px;
+    color: #55626b;
+}
+
+input[type=checkbox]:checked+span, input[type=checkbox]:hover+span{
+    color: black;
+}
+
+input[type=checkbox]:disabled+span{
+    color: lightgray;
+}
+
+button {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 50px;
+   /*background: radial-gradient(circle, #FFF9BF, #D1CC9C, #B3CCCB, #B3CCCB, #2B3A4C); */
+   /* background: radial-gradient(at top right, #FFF9BF, #D1CC9C, #B3CCCB, #2B3A4C, #2B3A4C);*/
+    /*background: radial-gradient(at top right, white, #e5f6ff, #c6cdd1, #dae5e5, #2B3A4C);*/
+    background: -webkit-radial-gradient(top right, #f2f2f2, #f2f2f2, #dae5e5, #c6cdd1);
+    background: radial-gradient(at top right, #f2f2f2, #f2f2f2, #dae5e5, #c6cdd1);
+    
+    
+}
+
+button:hover{
+    /*background: radial-gradient(at top right, #dae1e5, #c3d9e5, #a5b0b7, #b7cccc, #1a2533);*/
+    background: radial-gradient(at top right, #e5e5e5, #e5e5e5, #c6cdd1, #c6cdd1);
+    background: -webkit-radial-gradient(top right, #e5e5e5, #e5e5e5, #c6cdd1, #c6cdd1);
+    color: black;
+}
+
+button:active{
+    background: radial-gradient(at top right, #e5e5e5, #d8d8d8, #a5b0b7, #a5b0b7);
+    background: -webkit-radial-gradient(top right, #e5e5e5, #d8d8d8, #a5b0b7, #a5b0b7);
+}

@@ -1,0 +1,23 @@
+<!--<input ng-model="data.name" />
+<span>
+    complete:
+</span>
+<input type=checkbox ng-model="data.complete" ng-disabled="data.cancelled" ng-checked="data.cancelled || data.complete" />
+<span>
+    cancelled:
+</span>
+<input type=checkbox ng-model="data.cancelled" />
+
+<button ng-click="delete(data)">Delete</button>
+<ul>
+    <li ng-repeat="data in data.children" ng-include="&apos;tree_item_renderer.html&apos;"></li>
+</ul>-->
+
+<input ng-model="data.name" />
+<input type=checkbox ng-model="data.complete" ng-disabled="data.cancelled" ng-checked="data.cancelled || data.complete" /><span>Complete</span>
+<input type=checkbox ng-model="data.cancelled" /><span>Cancelled</span>
+
+<button ng-click="delete(data)">Delete</button>
+<ul>
+    <li ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"></li>
+</ul>
